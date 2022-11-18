@@ -1,12 +1,14 @@
 <script>
 import Jumbotron from "./Jumbotron.vue";
 import CtaHelp from "./CtaHelp.vue";
+import Presentation from "./Presentation.vue";
 
 export default {
     name: "AppMain",
     components: {
         Jumbotron,
         CtaHelp,
+        Presentation
     },
 };
 </script>
@@ -15,6 +17,7 @@ export default {
     <main>
         <Jumbotron />
         <CtaHelp />
+        <Presentation />
     </main>
 </template>
 

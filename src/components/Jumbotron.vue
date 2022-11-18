@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section>
-        <div class="ms_container-md">
+        <div class="ms_container-sm">
             <h1>BUILDING INSPIRING SPACES</h1>
             <p>We Build Inspiring Residential & Commercial Spaces</p>
             <div class="cta">

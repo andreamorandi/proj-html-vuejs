@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="cta">
-        <div class="ms_container-md">
+        <div class="ms_container-sm">
             <h2>Do You Have A Construction Project We Can Help With?</h2>
             <a href="/quote">GET A FREE QUOTE</a>
         </div>

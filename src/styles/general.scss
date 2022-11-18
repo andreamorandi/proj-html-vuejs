@@ -1,3 +1,6 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -28,8 +31,47 @@ img {
     max-height: 100%;
 }
 
+.section-heading {
+    padding: 2rem 0;
+    h2 {
+        margin: 1rem 0;
+    }
+    hr {
+        width: 30%;
+        margin: 1rem auto;
+        border-top: 2.5px solid $bright-sun-dark;
+    }
+    p {
+        margin-top: 1.5rem;
+        color: $dove-gray;
+    }
+}
+
+.ms_container-sm {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    .ms_container-sm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ms_container-sm {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ms_container-sm {
+        width: 100%;
+    }
+}
+
 .ms_container-md {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -47,6 +89,23 @@ img {
 
 @media screen and (max-width: 576px) {
     .ms_container-md {
+        width: 100%;
+    }
+}
+
+.ms_container-lg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .ms_container-lg {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ms_container-lg {
         width: 100%;
     }
 }
