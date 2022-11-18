@@ -35,7 +35,6 @@ export default {
         <div class="section-heading">
             <div class="ms_container-sm">
                 <h2>Specialists In Modern Construction</h2>
-                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
             </div>
         </div>
@@ -62,6 +61,10 @@ export default {
 @use "../styles/partials/variables" as *;
 .presentation {
     padding: 3rem 0;
+    .section-heading {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
     .features {
         padding: 2rem 0;
         .feature {
