@@ -105,6 +105,22 @@ img {
     margin: 0 auto;
 }
 
+.bg-bali-hai {
+    background-color: $bali-hai;
+}
+
+.bg-ship-cove {
+    background-color: $ship-cove;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-olive {
+    background-color: $olive;
+}
+
 @media screen and (max-width: 992px) {
     .ms_container-sm {
         width: 70%;

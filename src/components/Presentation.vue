@@ -6,22 +6,22 @@ export default {
             features: [
                 {
                     title: "buildings",
-                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi.",
+                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda.",
                     iconClasses: ["fa-regular", "fa-building"]
                 },
                 {
                     title: "renovate",
-                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi.",
+                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda.",
                     iconClasses: ["fa-solid", "fa-arrows-rotate"]
                 },
                 {
                     title: "construct",
-                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi.",
+                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda.",
                     iconClasses: ["fa-solid", "fa-house-chimney"]
                 },
                 {
                     title: "exclusive",
-                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi.",
+                    description: "Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda.",
                     iconClasses: ["fa-solid", "fa-truck"]
                 },
             ],
@@ -74,6 +74,9 @@ export default {
             h2 {
                 text-transform: capitalize;
                 margin: .75rem 0;
+            }
+            p {
+                color: $dove-gray;
             }
             i {
                 width: 50px;

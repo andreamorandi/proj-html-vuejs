@@ -4,6 +4,7 @@ import CtaHelp from "./CtaHelp.vue";
 import Presentation from "./Presentation.vue";
 import Numbers from "./Numbers.vue";
 import Works from "./Works.vue";
+import Values from "./Values.vue";
 
 export default {
     name: "AppMain",
@@ -12,7 +13,8 @@ export default {
         CtaHelp,
         Presentation,
         Numbers,
-        Works
+        Works,
+        Values
     },
 };
 </script>
@@ -24,6 +26,7 @@ export default {
         <Presentation />
         <Numbers />
         <Works />
+        <Values />
     </main>
 </template>
 
