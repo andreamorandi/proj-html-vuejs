@@ -38,9 +38,11 @@ export default {
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
             </div>
+        </div>
+        <div class="features">
             <div class="ms_container-lg">
                 <div class="container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                         <div class="col" v-for="(feature, index) in features" :key="index">
                             <div class="feature">
                                 <i :class="feature.iconClasses"></i>
@@ -60,16 +62,23 @@ export default {
 @use "../styles/partials/variables" as *;
 .presentation {
     padding: 3rem 0;
-    .row {
+    .features {
         padding: 2rem 0;
         .feature {
             border-radius: 10px;
             padding: 1.5rem;
             background-color: $pampas;
+            h2 {
+                text-transform: capitalize;
+                margin: .75rem 0;
+            }
             i {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 1rem;
                 border: 1px solid $dove-gray;
                 border-radius: 50%;
-                padding: 1rem;
                 color: $dove-gray;
             }
         }

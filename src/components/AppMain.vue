@@ -2,13 +2,15 @@
 import Jumbotron from "./Jumbotron.vue";
 import CtaHelp from "./CtaHelp.vue";
 import Presentation from "./Presentation.vue";
+import Numbers from "./Numbers.vue";
 
 export default {
     name: "AppMain",
     components: {
         Jumbotron,
         CtaHelp,
-        Presentation
+        Presentation,
+        Numbers
     },
 };
 </script>
@@ -18,6 +20,7 @@ export default {
         <Jumbotron />
         <CtaHelp />
         <Presentation />
+        <Numbers />
     </main>
 </template>
 
