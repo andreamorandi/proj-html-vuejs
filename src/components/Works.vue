@@ -1,6 +1,11 @@
 <script>
+import SectionHeading from './SectionHeading.vue';
+
 export default {
     name: "Works",
+    components: {
+        SectionHeading
+    },
     data() {
         return {
             images: ["work-1.jpg", "work-2.jpg", "work-3.jpg"],
@@ -16,12 +21,7 @@ export default {
 
 <template>
     <section class="works">
-        <div class="section-heading">
-            <div class="ms_container-sm">
-                <h2>Explore Recent Work</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
-            </div>
-        </div>
+        <SectionHeading title="Explore Recent Work" />
         <div class="images">
             <div class="ms_container-md">
                 <div class="container-fluid">

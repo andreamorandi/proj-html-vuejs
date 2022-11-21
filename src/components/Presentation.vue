@@ -1,9 +1,11 @@
 <script>
+import SectionHeading from "./SectionHeading.vue";
 import Feature from './Feature.vue';
 
 export default {
     name: "Presentation",
     components: {
+        SectionHeading,
         Feature
     },
     data() {
@@ -37,12 +39,7 @@ export default {
 
 <template>
     <section class="presentation">
-        <div class="section-heading">
-            <div class="ms_container-sm">
-                <h2>Specialists In Modern Construction</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
-            </div>
-        </div>
+        <SectionHeading title="Specialists In Modern Construction" />
         <div class="features">
             <div class="ms_container-lg">
                 <div class="container-fluid">

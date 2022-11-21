@@ -1,9 +1,11 @@
 <script>
+import SectionHeading from './SectionHeading.vue';
 import Value from './Value.vue';
 
 export default {
     name: "Values",
     components: {
+        SectionHeading,
         Value
     },
     data() {
@@ -37,12 +39,7 @@ export default {
 
 <template>
     <section class="values-section">
-        <div class="section-heading">
-            <div class="ms_container-sm">
-                <h2>Specialists In Modern Construction</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
-            </div>
-        </div>
+        <SectionHeading title="Our Core Values" />
         <div class="values">
             <div class="ms_container-md">
                 <div class="container-fluid">

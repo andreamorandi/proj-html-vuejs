@@ -1,5 +1,6 @@
 <script>
 import TestimonialsSlider from "./TestimonialsSlider.vue";
+
 export default {
     name: "Testimonials",
     components: {
@@ -21,9 +22,9 @@ export default {
                     image: "testimonial-2.jpg"
                 },
             ],
-        }
-    }
-}
+        };
+    },
+};
 </script>
 
 <template>
@@ -48,7 +49,21 @@ export default {
     background: url("../assets/img/banner-2.jpg") no-repeat center center;
     background-size: cover;
     .section-heading {
-        color: white;
+        h2 {
+            position: relative;
+            margin: 1rem 0;
+            color: white;
+            &::after {
+                content: '';
+                width: 150px;
+                height: 2px;
+                position: absolute;
+                bottom: -1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $bright-sun-dark;
+            }
+        }
     }
     .wave-top::after, 
     .wave-bottom::after {

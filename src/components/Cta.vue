@@ -12,7 +12,7 @@ export default {
                     <div class="cta-text col col-12 col-md-8">
                         <h2>Building Inspiring Spaces</h2>
                         <div class="title-underline"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi.</p>
                     </div>
                     <div class="cta-button col col-12 col-md-4">
                         <a href="/quote" class="mt-3 mt-md-5">GET A FREE QUOTE</a>
