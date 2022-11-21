@@ -1,6 +1,11 @@
 <script>
+import Value from './Value.vue';
+
 export default {
     name: "Values",
+    components: {
+        Value
+    },
     data() {
         return {
             values: [
@@ -43,11 +48,7 @@ export default {
                 <div class="container-fluid">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                         <div class="col" v-for="(value, index) in values" :key="index">
-                            <div class="value">
-                                <i :class="value.iconClasses"></i>
-                                <span>{{ value.title }}</span>
-                                <p>{{ value.description }}</p>
-                            </div>
+                            <Value :value="value" />
                         </div>
                     </div>
                 </div>
@@ -69,34 +70,6 @@ export default {
     }
     .values {
         padding-top: 1rem;
-        span {
-            position: relative;
-            display: block;
-            text-transform: capitalize;
-            margin: .75rem 0;
-            &::after {
-                content: '';
-                width: 20px;
-                height: 2px;
-                position: absolute;
-                top: 130%;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: $dove-gray;
-            }
-        }
-        p {
-            margin-top: 1.5rem;
-            color: $dove-gray;
-        }
-        i {
-            width: 75px;
-            height: 75px;
-            line-height: 75px;
-            font-size: 2.15rem;
-            border-radius: 50%;
-            color: white;
-        }
     }
 }
 </style>
