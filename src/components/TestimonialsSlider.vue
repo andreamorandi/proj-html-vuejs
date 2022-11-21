@@ -34,7 +34,7 @@ export default {
 
 <template>
     <div class="testimonial" @mouseover="upSlide = true" @mouseleave="upSlide = false">
-        <img :src="getImagePath(slides[currentSlide].image)" alt="">
+        <img :src="getImagePath(slides[currentSlide].image)" :alt="`${slides[currentSlide].user} image`">
         <p>{{ `"${slides[currentSlide].phrase}"` }}</p>
         <h6>{{ `${slides[currentSlide].user} &middot; ${slides[currentSlide].state}` }}</h6>
         <div class="circles">
