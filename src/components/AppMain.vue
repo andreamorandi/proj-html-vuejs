@@ -5,6 +5,7 @@ import Presentation from "./Presentation.vue";
 import Numbers from "./Numbers.vue";
 import Works from "./Works.vue";
 import Values from "./Values.vue";
+import Testimonials from "./Testimonials.vue";
 
 export default {
     name: "AppMain",
@@ -14,7 +15,8 @@ export default {
         Presentation,
         Numbers,
         Works,
-        Values
+        Values,
+        Testimonials
     },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
         <Numbers />
         <Works />
         <Values />
+        <Testimonials />
     </main>
 </template>
 
