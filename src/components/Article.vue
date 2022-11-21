@@ -25,6 +25,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
 .image-wrapper {
     img {
         width: 100%;
@@ -35,7 +37,7 @@ export default {
     padding: 2rem;
     background-color: white;
     hr {
-        color: silver;
+        color: $silver;
     }
     p:first-of-type {
         font-size: .7rem;

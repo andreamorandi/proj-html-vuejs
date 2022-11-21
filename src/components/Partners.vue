@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "Works",
+    name: "Partners",
     data() {
         return {
             images: ["partner-1.png", "partner-2.png", "partner-3.png", "partner-4.png", "partner-5.png"],

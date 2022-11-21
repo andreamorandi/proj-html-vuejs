@@ -8,6 +8,7 @@ import Values from "./Values.vue";
 import Testimonials from "./Testimonials.vue";
 import News from "./News.vue";
 import Partners from "./Partners.vue";
+import Cta from "./Cta.vue";
 
 export default {
     name: "AppMain",
@@ -20,7 +21,8 @@ export default {
         Values,
         Testimonials,
         News,
-        Partners
+        Partners,
+        Cta
     },
 };
 </script>
@@ -36,6 +38,7 @@ export default {
         <Testimonials />
         <News />
         <Partners />
+        <Cta />
     </main>
 </template>
 
