@@ -46,6 +46,9 @@ export default {
         font-size: 2.15rem;
         border-radius: 50%;
         color: white;
+        &:hover {
+            background-color: $bright-sun-light;
+        }
     }
 }
 </style>

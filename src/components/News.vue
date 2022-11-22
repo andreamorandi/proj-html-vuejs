@@ -15,19 +15,22 @@ export default {
                     title: "Redeveloping Florida's Remote Southern Coast",
                     date: "December 7th, 2015",
                     content: "Technology is Here to Stay Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque. Numquam, consequuntur, nemo reiciendis dolores asperiores nihil veritatis aut inventore aliquid non aperiam possimus temporibus optio quasi quis nobis consequatur!",
-                    image: "news-1.jpg"
+                    image: "news-1.jpg",
+                    type: "Architecture, Buildings, Construction, News"
                 },
                 {
                     title: "How We Manage Large Construction Projects",
                     date: "December 7th, 2015",
                     content: "Technology is Here to Stay Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque. Numquam, consequuntur, nemo reiciendis dolores asperiores nihil veritatis aut inventore aliquid non aperiam possimus temporibus optio quasi quis nobis consequatur!",
-                    image: "news-2.jpg"
+                    image: "news-2.jpg",
+                    type: "Architecture, Buildings, Construction, News"
                 },
                 {
                     title: "Future proofing a modern home",
                     date: "December 6th, 2015",
                     content: "Technology is Here to Stay Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque. Numquam, consequuntur, nemo reiciendis dolores asperiores nihil veritatis aut inventore aliquid non aperiam possimus temporibus optio quasi quis nobis consequatur!",
-                    image: "news-3.jpg"
+                    image: "news-3.jpg",
+                    type: "Architecture, Buildings, Construction, News"
                 },
             ],
         };

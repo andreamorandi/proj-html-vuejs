@@ -4,7 +4,7 @@ export default {
     props: {
         feature: Object
     },
-}
+};
 </script>
 
 <template>

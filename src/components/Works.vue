@@ -1,20 +1,33 @@
 <script>
 import SectionHeading from './SectionHeading.vue';
+import Work from './Work.vue';
 
 export default {
     name: "Works",
     components: {
-        SectionHeading
+        SectionHeading,
+        Work
     },
     data() {
         return {
-            images: ["work-1.jpg", "work-2.jpg", "work-3.jpg"],
+            works: [
+                {
+                    title: "Chicago Hospital",
+                    image: "work-1.jpg",
+                    type: "Services"
+                },
+                {
+                    title: "Florida Health Facility",
+                    image: "work-2.jpg",
+                    type: "Commercial"
+                },
+                {
+                    title: "Mexico Residential Complex",
+                    image: "work-3.jpg",
+                    type: "Residential"
+                },
+            ],
         };
-    },
-    methods: {
-        getImagePath(imageName) {
-            return new URL(`../assets/img/${imageName}`, import.meta.url).href;
-        },
     },
 }
 </script>
@@ -24,11 +37,9 @@ export default {
         <SectionHeading title="Explore Recent Work" />
         <div class="images">
             <div class="ms_container-md">
-                <div class="container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                        <div class="col" v-for="(image, index) in images" :key="index">
-                            <img :src="getImagePath(image)" :alt="`Work ${index} image`">
-                        </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                    <div class="col" v-for="(work, index) in works" :key="index">
+                        <Work :work="work" />
                     </div>
                 </div>
             </div>
