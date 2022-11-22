@@ -1,6 +1,11 @@
 <script>
+import SectionHeading from './SectionHeading.vue';
+
 export default {
     name: "Partners",
+    components: {
+        SectionHeading
+    },
     data() {
         return {
             images: ["partner-1.png", "partner-2.png", "partner-3.png", "partner-4.png", "partner-5.png"],
@@ -11,17 +16,12 @@ export default {
             return new URL(`../assets/img/${imageName}`, import.meta.url).href;
         },
     },
-}
+};
 </script>
 
 <template>
     <section class="partners">
-        <div class="section-heading">
-            <div class="ms_container-sm">
-                <h2>Trusted Partners</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
-            </div>
-        </div>
+        <SectionHeading title="Trusted Partners" />
         <div class="images">
             <div class="ms_container-md">
                 <div class="container-fluid">
@@ -41,7 +41,7 @@ export default {
 @use "../styles/partials/variables" as *;
 .partners {
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     .section-heading {
         padding-top: 1.5rem;
     }

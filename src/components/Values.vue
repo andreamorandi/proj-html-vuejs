@@ -32,9 +32,9 @@ export default {
                     iconClasses: ["fa-regular", "fa-lightbulb", "bg-olive"]
                 },
             ],
-        }
-    }
-}
+        };
+    },
+};
 </script>
 
 <template>

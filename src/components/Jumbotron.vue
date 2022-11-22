@@ -79,6 +79,7 @@ section {
             width: 50px;
             height: 50px;
             position: relative;
+            cursor: pointer;
             margin-top: .25rem;
             border-radius: 5px;
             color: $tuatara;

@@ -1,9 +1,11 @@
 <script>
+import SectionHeading from './SectionHeading.vue';
 import Article from "./Article.vue";
 
 export default {
     name: "News",
     components: {
+        SectionHeading,
         Article
     },
     data() {
@@ -30,17 +32,12 @@ export default {
             ],
         };
     },
-}
+};
 </script>
 
 <template>
     <section class="news-section">
-        <div class="section-heading">
-            <div class="ms_container-sm">
-                <h2>Latest News</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem tenetur sapiente autem quisquam omnis molestiae, assumenda, vel perspiciatis unde modi sequi. Eligendi earum enim recusandae, reiciendis minus commodi illo!</p>
-            </div>
-        </div>
+        <SectionHeading title="Latest News" />
         <div class="articles">
             <div class="ms_container-md">
                 <div class="container-fluid">
