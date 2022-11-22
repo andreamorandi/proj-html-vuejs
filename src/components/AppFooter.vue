@@ -34,7 +34,7 @@ export default {
         <div class="footer-top-line"></div>
         <div class="footer-content">
             <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                     <div class="col">
                         <div class="story">
                             <img :src="getImagePath('footer-logo.png')" alt="footer logo">
@@ -122,7 +122,7 @@ footer {
         .footer-popup {
             position: absolute;
             bottom: 0;
-            right: 3rem;
+            right: .5rem;
             cursor: pointer;
             padding: .35rem .75rem .15rem .75rem;
             color: white;

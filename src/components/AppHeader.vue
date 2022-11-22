@@ -3,6 +3,7 @@ export default {
     name: "AppHeader",
     data() {
         return {
+            showMenu: false,
             links: [
                 {
                     title: "home",
@@ -43,13 +44,26 @@ export default {
 <template>
     <header>
         <img :src="getImagePath('logo.png')" alt="logo">
-        <nav>
+        <nav class="d-nav">
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a :href="link.href" :class="{active: link.active}">{{ link.title }}</a>
                     <div class="arrow-down" v-if="link.active"></div>
                 </li>
                 <li>
+                    <a href="/quote">get quote</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid m-nav-icon" :class="!showMenu ? 'fa-bars' : 'fa-xmark'" @click="showMenu = !showMenu"></i>
+        <nav class="m-nav" v-show="showMenu">
+            <ul class="row row-cols-2 g-2">
+                <div class="col" v-for="(link, index) in links" :key="index">
+                    <li>
+                        <a :href="link.href" :class="{active: link.active}">{{ link.title }}</a>
+                    </li>
+                </div>
+                <li class="col">
                     <a href="/quote">get quote</a>
                 </li>
             </ul>
@@ -74,7 +88,7 @@ header {
     img {
         height: 70px;
     }
-    nav {
+    .d-nav {
         height: 100%;
         ul {
             height: 100%;
@@ -82,7 +96,7 @@ header {
             li {
                 height: 100%;
                 position: relative;
-                @include flex();
+                @include flex-center();
                 a {
                     height: 100%;
                     line-height: 100px;
@@ -123,6 +137,78 @@ header {
                 }
             }
         }
+    }
+    .m-nav-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $tuatara;
+        &.fa-bars:hover {
+            color: $bright-sun-light;
+        }
+        &.fa-xmark:hover {
+            color: red;
+        }
+    }
+    .m-nav {
+        width: 100%;
+        max-width: 400px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        padding: 0 5%;
+        background-color: white;
+        a {
+            height: 100%;
+            line-height: 100px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            padding: 0 1.5rem;
+            color: $tuatara;
+            &.active {
+                color: $bright-sun-light;
+            }
+        }
+        li {
+            @include flex-center();
+        }
+        .col:last-child {
+            a {
+                height: 40%;
+                line-height: 40px;
+                background-color: $bright-sun-light;
+                &:hover {
+                    color: white;
+                    background-color: $tuatara;
+                }
+            }
+        }
+        .col:not(:last-child) {
+            a:hover {
+                color: $bright-sun-light;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .d-nav {
+        li:last-child {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .d-nav {
+            display: none;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .m-nav-icon,
+    .m-nav {
+        display: none;
     }
 }
 </style>
