@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div class="work">
-        <img :src="getImagePath(work.image)" :alt="`${work.title} image`" v-show="!workHover" @mouseenter="workHover = true" @mouseleave="workHover = false">
+        <img :src="getImagePath(work.image)" :alt="`${work.title} image`" v-show="!workHover" @mouseover="workHover = true">
         <div class="work-back" v-show="workHover" @mouseleave="workHover = false">
             <div class="work-info">
                 <i class="fa-solid fa-link"></i>
@@ -52,6 +52,7 @@ export default {
             width: 40px;
             height: 40px;
             line-height: 40px;
+            cursor: pointer;
             margin: .5rem;
             border-radius: 50%;
             color: $bright-sun-light;
